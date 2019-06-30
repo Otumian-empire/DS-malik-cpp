@@ -1,0 +1,3 @@
+﻿my name is michael
+hello there, i am a new text added through ofstream 
+i love programming and hopefully i shall become a software engineer and a lecturer
