@@ -1,0 +1,135 @@
+A computer program, or a program, is a sequence of
+statements whose objective is to accomplish a task.
+
+Programming is a process of planning and creating a program.
+
+Most stand alone c++ program is of the form,
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // code
+    return 0;
+}
+
+The syntax rules tell you which statements (instructions) are 
+ legal, or accepted by the programming language, and which are not.
+
+The semantic rules, which determine the meaning of the instructions.
+
+Programming language: A set of rules, symbols, and special words.
+
+Comment can be used to identify the authors of the program, give the
+ date, when the program is written or modified, give a brief 
+ explanation of the program, and explain the meaning of key statements
+  in a program.
+Single line Comment //
+Multiline Comment /* */
+
+Reserved keywords cannot be used for anything other than their intended
+ use by the developer.
+
+Identifiers consists of letters, digits, and the underscore character ( _ )
+and must begin with a letter or underscore.
+
+Whitespaces include blanks, tabs, and newline characters.
+
+Data type is set of values together with a set of operations.
+There are 3 types of Data types in c++:
+1. Simple data type
+2. Structured data type
+3. Pointers
+
+Simple Data Types
+The simple data type is the fundamental data type in C++ because it becomes a building
+block for the structured data type. There are three categories of simple data:
+1. Integers
+2. Floating-point
+3. Enumeration (user-defined data type)
+
+Arithmetic Operators: + (addition), - (subtraction or negation), * (multiplication), /
+(division), % (mod, (modulus or remainder)).
+Precedence: * , /, %, +, -
+
+implicit type coercion is when a value of one data type is automatically changed to another
+data type.
+explicit type conversion/casting is done, static_cast<dataTypeName>(expression) or 
+dataType(expression) .
+Eg: static_cast<int>(1.2) or int(1.2)
+
+The data type string is a programmer-defined data type.
+A string is a sequence of zero or more characters.
+
+Storing data in the computer’s memory is a two-step process:
+1. Instruct the computer to allocate memory.
+2. Include statements in the program to put data into the allocated memory.
+
+Named constant is a memory location whose content is not allowed to change during
+program execution.
+Eg: const dataType identifier = value;
+
+Variable is a memory location whose content may change during program execution.
+Eg: dataType identifier, identifier, ...;
+
+you must declare all identifiers before you can use them.
+
+you can place data into a variable in two ways:
+1. Use C++’s assignment statement.
+2. Use input (read) statements.
+Eg: variable = expression;
+
+When a variable is declared, memory is allocated for it.
+
+Putting data into variables from the standard input device is accomplished via the use of
+cin and the operator >> . The syntax of cin together with >> is:
+cin >> variable >> variable ...;
+>> is called the stream extraction operator.
+
+Suppose count is an int variable. The statement:
+count = count + 1;
+count += 1;
+count++;
+increments the value of count by 1.
+
+Pre-increment: ++variable
+Post-increment: variable++
+
+Pre-decrement: ––variable
+Post-decrement: variable––
+
+output on the standard output device is accomplished via the use of cout and
+the operator << . The general syntax of cout together with << is:
+cout << expression or manipulator << expression or manipulator...;
+<< is called the stream insertion operator
+
+Generating output with cout follows two rules:
+1. The expression is evaluated, and its value is printed at the current
+insertion point on the output device.
+2. A manipulator is used to format the output. The simplest manipulator
+is endl (the last character is the letter el), which causes the insertion
+point to move to the beginning of the next line.
+
+\ is called the escape character and \n is called newline escape sequence.
+
+reprocessor directives are processed by a program called a preprocessor.
+#include <headerFileName>
+
+cin, cout and endl identifiers are declared in the header file iostream , but within
+the std namespace. use std::cin, std::cout, std::endl with `using namespace std;`
+
+#include <string> to use the string dataType
+
+Program Style and Form:
+1. A C++ program must contain the function main
+2. Every line of expression/statement must end with ;
+3. By conversion variable names are lowercase where constants are Uppercase
+4. Use clearly written prompts so that users will know what to do when they interact
+ with a program
+5. use comments to document programs. They should appear in a program to explain the
+ purpose of the program, identify who wrote it, and explain the purpose of particular
+  statements.
+
+variable = variable operations (expression);
+can written as:
+variable operations= expression;

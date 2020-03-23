@@ -13,7 +13,7 @@ namespace globalType {
 	void printResult();
 }
 
-#include <iostream>
+#include <iostream>z
 
 using namespace std;
 // using namespace otu;
