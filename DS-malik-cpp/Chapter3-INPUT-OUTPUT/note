@@ -1,0 +1,43 @@
+In C++, I/O is a sequence of bytes, called a stream, from the source to the
+destination.
+
+Therefore, a stream is a sequence of characters from the source to the destination.
+There are two types of streams:
+1. Input stream: A sequence of characters from an input device to the computer.
+2. Output stream: A sequence of characters from the computer to an output device.
+
+To use cin and cout , every C++ program must use the preprocessor directive:
+#include <iostream>
+
+Use some predefined functions from cmath lib such as pow, sqrt
+
+The variable cin can access the stream function get , which is used to read character
+data. cin.get(varChar);
+
+use the stream function ignore to discard a portion of the input.
+cin.ignore(intExp, chExp); This will ignore the next intExp characters or until it 
+ encounters chExp. cin.ignore(); with no args skips the very next char
+
+when wrong value is supplied to the input stream, the I/O enters into a fail state
+use the stream function clear to restore the input stream to a
+working state, istreamVar.clear();
+
+endl, setprecision(n) , fixed , showpoint , setfill(ch) setw(n), left, right and getline(cin, strVar) are 
+manipulator is used to format the output.
+
+To use the manipulator setprecision , the program must include the header file
+iomanip . Thus, the following include statement is required:
+#include <iomanip>
+
+File: An area in secondary storage used to hold information.
+C++ provides a header file called fstream , which is used for file I/O.
+File I/O is a five-step process:
+1. Include the header file fstream in the program.
+2. Declare file stream variables.
+3. Associate the file stream variables with the input/output sources.
+4. Use the file stream variables with >> , << , or other input/output functions.
+5. Close the files.
+
+
+
+

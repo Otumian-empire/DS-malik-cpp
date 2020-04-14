@@ -1,0 +1,99 @@
+Control structure = sequence (executing one after the other), selection (by making a choice) and 
+repetition (by executing a statement over and over)
+
+Relational operators
+Operator        Description
+==              equal to
+!=              not equal to
+<               less than
+<=              less than or equal to
+>               greater than
+>=              greater than or equal to
+
+NOTE: = (single equal to) is known as assignment operator and == (double equal to ) is a Relational 
+operator, used for comparing two objects if they are the same
+
+When comparing character types, their ascii values are used instead
+Eg: 
+'A' > 'B' False or 0 because the ascii value of 'A' is less than that of 'B'
+65 A
+66 B
+67 C
+68 D
+
+When comparing string types, it is done character by character just like the character types
+"Hello" < "Hi" True because Both have equal values of H but 'e' comes before 'i' on the ascii 
+character there hello is less than Hi
+
+Operator    Description
+!           not
+&&          and
+||          or
+
+Operators       Precedence
+! , + , -       (unary operators) first
+* , / , %       second
++ , -           third
+< , <= , >= , > fourth
+== , !=         fifth
+&&              sixth
+||              seventh
+=               last
+
+selection (if and else)
+
+if (condition) {
+    do this when condition evaluates to true
+} else {
+    do this
+}
+Eg:
+int age;
+cin >> age;
+if (age >= 25) {
+    cout << "Matured student" << endl;
+} else {
+    cout << "We need some credentials please" << endl;
+}
+
+Two additional common causes of input failure are the following:
+• Attempting to open an input file that does not exist
+• Attempting to read beyond the end of an input file
+
+?: , is a ternary operator,
+which means that it takes three arguments.
+expression1 ? expression2 : expression3
+Eg:
+if (a >= b)
+    max = a;
+else
+    max = b;
+
+can be written as 
+max = (a >= b) ? a : b ;
+
+switch (expression)
+{
+    case value1:
+        statements1
+        break;
+    case value2:
+        statements2
+        break;
+    .
+    .
+    .
+    case valuen:
+        statementsn
+        break;
+    default:
+        statements
+}
+
+C++ includes a predefined function, assert , that
+is useful in stopping program execution when certain elusive errors occur.
+#include <cassert> and Do, assert(expression);
+
+if an assert statement fails for some reason, an end
+user would have no idea what the error means. Therefore, after you have developed and
+tested a program, you might want to remove or disable the assert statements.
