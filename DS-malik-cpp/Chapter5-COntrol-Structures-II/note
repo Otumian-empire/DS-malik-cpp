@@ -1,0 +1,129 @@
+The general form of the while statement is:
+    while (expression) {
+       statement 
+    }
+
+while is a reserved word.
+the statement can be either a simple or compound statement.
+The expression acts as a decision maker and is usually a logical expression.
+The statement is called the body of the loop. 
+the parentheses around the expression are part of the syntax.
+
+the body of a while executes only when the expression , in the
+while statement, evaluates to true
+
+the expression checks whether a variable(s), called the loop control 
+variable (LCV), satisfies certain conditions.
+
+//initialize the loop control variable(s)
+while (expression) //expression tests the LCV
+{
+    .
+    //update the loop control variable(s)
+    .
+}
+
+Eg: 
+
+int counter = 10;
+while (counter > 0) {
+    cout << "Counting " << counter << endl;
+}
+
+cout << "Counting ended" << endl;
+
+various forms of while loops.
+Case 1: Counter-Controlled while Loops
+    we know how many times certain statements need to be executed.
+Case 2: Sentinel-Controlled while Loops
+    we do not always know how many pieces of data (or entries) need to be read
+    but we may know that the last entry is a special value, called a sentinel.
+    
+    cin >> variable;
+    while (variable != sentinel) //test the loop control variable
+    {
+        .
+        cin >> variable;
+        //update the loop control variable
+        .
+    }
+Case 3: Flag-Controlled while Loops
+    A flag-controlled while loop uses a bool variable to control the loop
+
+    found = false;
+    //initialize the loop control variable
+
+    while (!found)
+    //test the loop control variable
+    {
+        .
+        if (expression)
+        found = true; //update the loop control variable
+        .
+    }
+
+Case 4: EOF-Controlled while Loops
+
+
+for Looping (Repetition) Structure
+
+The general form of the for statement is:
+
+    for (initial statement; loop condition; update statement)
+        statement
+
+The initial statement , loop condition , and update statement (called for
+loop control statements) enclosed within the parentheses control the body ( statement )
+of the for statement.
+
+The following for loop prints the first 10 nonnegative integers:
+    for (i = 0; i < 10; i++)
+        cout << i << " ";
+
+    cout << endl;
+
+The syntax of the for loop, which is:
+    for (initial expression; logical expression; update expression)
+        statement
+
+is functionally equivalent to the following while statement:
+
+initial expression
+while (expression)
+{
+    statement
+    update expression
+}
+
+do...while Looping (Repetition) Structure
+
+The general form of a do . . . while statement is as follows:
+do
+    statement
+while (expression);
+
+The statement executes first, and then the expression is evaluated. If the expression
+evaluates to true , the statement executes again.
+
+int i = 0;
+do
+{
+    cout << i << " ";
+    i = i + 5;
+}
+while (i <= 20);
+
+
+break and continue Statements
+
+The break statement, when executed in a switch structure, provides an immediate
+exit from the switch structure. Similarly, you can use the break statement in
+while , for , and do . . . while loops. When the break statement executes in a
+repetition structure, it immediately exits from the structure. The break statement
+is typically used for two purposes:
+• To exit early from a loop.
+• To skip the remainder of the switch structure.
+
+The continue statement is used in while , for , and do . . . while structures. When the
+continue statement is executed in a loop, it skips the remaining statements in the loop and
+proceeds with the next iteration of the loop.

@@ -1,0 +1,16 @@
+Functions are often called modules.
+
+User-defined functions in C++ are classified into two categories:
+    Value-returning functions—functions that have a return type. These
+     functions return a value of a specific data type using the return
+     statement, which we will explain shortly.
+    Void functions—functions that do not have a return type. These
+     functions do not use a return statement to return a value.
+
+Formal Parameter: A variable declared in the function heading.
+Actual Parameter: A variable or expression listed in a call to a function.
+
+Function Prototype: The function heading without the body of the function.
+
+The general syntax of the function prototype of a value-returning function is:
+functionType functionName(parameter list);
